@@ -22,3 +22,11 @@ add following to the bottom of `.zshrc`
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 ```
+## brew installation
+
+```
+brew install fzf
+```
+```
+```
+
