@@ -30,3 +30,7 @@ Nvim configuration is lightly customized lazyvim starter project.
 brew install fzf
 ```
 
+## Misc utilities
+```bash
+brew install lazygit
+```
