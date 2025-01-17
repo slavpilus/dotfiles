@@ -30,6 +30,17 @@ Nvim configuration is lightly customized lazyvim starter project.
 brew install fzf
 ```
 
+## SketchyBar
+
+https://felixkratz.github.io/SketchyBar
+
+
+```bash
+brew tap FelixKratz/formulae
+brew install sketchybar
+brew install --cask font-hack-nerd-font
+```
+
 ## Misc utilities
 ```bash
 brew install lazygit
