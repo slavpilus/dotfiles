@@ -14,7 +14,7 @@ POPUP_CORNER_RADIUS=11
 SHADOW=on
 
 # Setting up the general bar appearance and default values
-sketchybar --bar height=50 \
+sketchybar --bar height=60 \
   color=$BAR_COLOR \
   shadow=$SHADOW \
   position=right \
@@ -47,7 +47,15 @@ sketchybar --bar height=50 \
 source "$ITEM_DIR/apple.sh"
 source "$ITEM_DIR/spaces.sh"
 
-sketchybar --add item volume left \
+sketchybar --add item separator right \
+  --set separator icon= \
+  icon.font="Hack Nerd Font:Regular:16.0" \
+  background.padding_left=15 \
+  background.padding_right=15 \
+  label.drawing=off \
+  icon.color=$GREEN
+
+sketchybar --add item volume right \
   --set volume script="$ITEM_DIR/volume.sh" \
   --subscribe volume volume_change
 
