@@ -43,17 +43,18 @@ sketchybar --bar height=60 \
   popup.background.color=$POPUP_BACKGROUND_COLOR \
   popup.background.shadow.drawing=$SHADOW
 
-# Left
+# Top
 source "$ITEM_DIR/apple.sh"
 source "$ITEM_DIR/spaces.sh"
 
+# Bottom
 sketchybar --add item volume right \
   --set volume script="$ITEM_DIR/volume.sh" \
   background.padding_right=15 \
   --subscribe volume volume_change
 
-sketchybar --add item separator2 right \
-  --set separator2 icon= \
+sketchybar --add item separator-system right \
+  --set separator-system icon= \
   icon.font="Hack Nerd Font:Regular:16.0" \
   background.padding_right=15 \
   label.drawing=off \

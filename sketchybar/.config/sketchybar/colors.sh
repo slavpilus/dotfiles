@@ -2,25 +2,23 @@
 
 # Color Palette
 BLACK=0xff181926
-WHITE=0xffcad3f5
-RED=0xffed8796
-GREEN=0xffa6da95
+WHITE=0xfffbf1c7
+RED=0xffcc241d
+GREEN=0xff98971a
+AQUA=0xff689d6a
 BLUE=0xff8aadf4
 YELLOW=0xffeed49f
 ORANGE=0xfff5a97f
 MAGENTA=0xffc6a0f6
-GREY=0xff939ab7
+GREY=0xffd65d0e
 TRANSPARENT=0x00000000
 
 # General bar colors
 BAR_COLOR=0xcc24273a #$GREY # Grey bar
-ICON_COLOR=$WHITE # Color of all icons
-LABEL_COLOR=$WHITE # Color of all labels
+ICON_COLOR=$WHITE    # Color of all icons
+LABEL_COLOR=$WHITE   # Color of all labels
 
 POPUP_BACKGROUND_COLOR=$BLACK
 POPUP_BORDER_COLOR=$WHITE
 
 SHADOW_COLOR=$BLACK
-
-# Item specific special colors
-SPOTIFY_GREEN=$GREEN
