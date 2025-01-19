@@ -10,11 +10,11 @@ if [[ $STATUS_LABEL =~ \"label\"=\"([^\"]*)\" ]]; then
     ICON_COLOR=$ORANGE
   else
     ICON_COLOR=$GREY
-    LABEL='-'
+    LABEL=''
   fi
 else
   ICON_COLOR=$GREY
-  LABEL='-'
+  LABEL=''
 fi
 
 sketchybar --set $NAME icon=$ICON label="${LABEL}" icon.color=${ICON_COLOR}

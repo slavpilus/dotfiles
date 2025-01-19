@@ -11,11 +11,11 @@ if [[ $STATUS_LABEL =~ \"label\"=\"([^\"]*)\" ]]; then
     elif [[ $LABEL =~ ^[0-9]+$ ]]; then
         ICON_COLOR=$RED
     else
-        LABEL='-'
+        LABEL=''
         ICON_COLOR=$GREY
     fi
 else
-  LABEL='-'
+  LABEL=''
   ICON_COLOR=$GREY
 fi
 
