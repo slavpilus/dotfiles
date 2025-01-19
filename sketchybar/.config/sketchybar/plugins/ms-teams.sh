@@ -7,7 +7,7 @@ if [[ $STATUS_LABEL =~ \"label\"=\"([^\"]*)\" ]]; then
   if [[ $LABEL == "" ]]; then
     ICON_COLOR=$AQUA
   elif [[ $LABEL =~ ^[0-9]+$ ]]; then
-    ICON_COLOR=$RED
+    ICON_COLOR=$ORANGE
   else
     ICON_COLOR=$GREY
     LABEL='-'
