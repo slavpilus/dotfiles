@@ -31,8 +31,6 @@ brew install fzf
 ```
 
 ## SketchyBar
-Needs SF Pro font to be installed - https://developer.apple.com/fonts/
-
 https://felixkratz.github.io/SketchyBar
 
 ```bash
