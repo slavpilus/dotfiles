@@ -6,7 +6,7 @@ source "$HOME/.config/sketchybar/icons.sh"  # Loads all defined icons
 ITEM_DIR="$HOME/.config/sketchybar/items"     # Directory where the items are configured
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins" # Directory where all the plugin scripts are stored
 FONT="Hack Nerd Font"                         # Needs to have Regular, Bold, Semibold, Heavy and Black variants
-PADDINGS=3                                    # All paddings use this value (icon, label, background)
+PADDINGS=2                                    # All paddings use this value (icon, label, background)
 
 POPUP_BORDER_WIDTH=2
 POPUP_CORNER_RADIUS=11
@@ -48,6 +48,16 @@ source "$ITEM_DIR/apple.sh"
 source "$ITEM_DIR/spaces.sh"
 
 # Bottom
+sketchybar --add item date right \
+  --set date script="$PLUGIN_DIR/date.sh" \
+  background.padding_right=15 \
+  update_freq=60
+
+sketchybar --add item clock right \
+  --set clock script="$PLUGIN_DIR/clock.sh" \
+  background.padding_right=15 \
+  update_freq=10
+
 sketchybar --add item volume right \
   --set volume script="$ITEM_DIR/volume.sh" \
   background.padding_right=15 \
@@ -59,6 +69,14 @@ sketchybar --add item separator-system right \
   background.padding_right=15 \
   label.drawing=off \
   icon.color=$GREEN
+
+sketchybar --add item ms-outlook right \
+  --set ms-outlook \
+  update_freq=60 \
+  script="$PLUGIN_DIR/ms-outlook.sh" \
+  background.padding_right=15 \
+  icon.font.size=18 \
+  --subscribe ms-outlook system_woke
 
 sketchybar --add item ms-teams right \
   --set ms-teams \

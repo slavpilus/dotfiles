@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 source "$HOME/.config/sketchybar/colors.sh" # Loads all defined colors
-STATUS_LABEL=$(lsappinfo info -only StatusLabel "Microsoft Teams")
-ICON="󰊻"
+STATUS_LABEL=$(lsappinfo info -only StatusLabel "Microsoft Outlook")
+ICON="󰴢"
 if [[ $STATUS_LABEL =~ \"label\"=\"([^\"]*)\" ]]; then
   LABEL="${BASH_REMATCH[1]}"
   if [[ $LABEL == "" ]]; then
