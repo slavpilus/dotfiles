@@ -5,6 +5,7 @@
                 "rules": [
                     {
                         "description": "Change spacebar to left_shift.",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {

@@ -12,6 +12,8 @@ if [[ $STATUS_LABEL =~ \"label\"=\"([^\"]*)\" ]]; then
     ICON_COLOR=$GREY
     LABEL=''
   fi
+elif [[ $STATUS_LABEL =~ \"label\"=kCFNULL ]]; then
+    ICON_COLOR=$AQUA
 else
   ICON_COLOR=$GREY
   LABEL=''
