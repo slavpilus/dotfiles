@@ -33,4 +33,5 @@ brew install fzf
 brew install fd
 brew install ripgrep
 brew install lazygit
+brew install eza
 ```
