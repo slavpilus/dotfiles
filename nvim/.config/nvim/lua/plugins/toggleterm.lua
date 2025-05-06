@@ -10,6 +10,8 @@ return {
     { "<leader>tl", "<cmd>TermSelect<CR>", desc = "Select terminal" },
     { "<leader>tc", "<cmd>lua _CLAUDE_TOGGLE()<CR>", desc = "Claude Toggle" },
     { "<leader>tg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", desc = "Claude Toggle" },
+    { "<leader>tn", "<cmd>lua _WORK_NOTES_TOGGLE()<CR>", desc = "Work Notes Toggle" },
+    { "<leader>th", "<cmd>lua _PERSONAL_NOTES_TOGGLE()<CR>", desc = "Personal Notes Toggle" },
 
     -- Terminals 2-5 on keys u-p
     { "<leader>tu", "<cmd>2ToggleTerm<CR>", desc = "Toggle terminal 2" },
@@ -71,8 +73,49 @@ return {
         end,
       },
     })
+
     function _CLAUDE_TOGGLE()
       claude:toggle()
+    end
+
+    local workNotes = Terminal:new({
+      cmd = "nvim Welcome.md",
+      dir = "~/dev/notes/work/",
+      hidden = true,
+      direction = "float",
+      float_opts = {
+        border = "curved",
+        width = function()
+          return math.floor(vim.o.columns * 0.9)
+        end,
+        height = function()
+          return math.floor(vim.o.lines * 0.9)
+        end,
+      },
+    })
+
+    function _WORK_NOTES_TOGGLE()
+      workNotes:toggle()
+    end
+
+    local personalNotes = Terminal:new({
+      cmd = "nvim Welcome.md",
+      dir = "~/dev/notes/personal/",
+      hidden = true,
+      direction = "float",
+      float_opts = {
+        border = "curved",
+        width = function()
+          return math.floor(vim.o.columns * 0.9)
+        end,
+        height = function()
+          return math.floor(vim.o.lines * 0.9)
+        end,
+      },
+    })
+
+    function _PERSONAL_NOTES_TOGGLE()
+      personalNotes:toggle()
     end
 
     -- Additional setup like terminal specific keymaps
