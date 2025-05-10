@@ -27,6 +27,13 @@ eval "$(starship init zsh)"
 
 Nvim configuration is lightly customized lazyvim starter project.
 
+## fzf
+Add the following to the `.zshrc`
+```
+source <(fzf --zsh)
+```
+
+
 ## Misc utilities
 ```bash
 brew install fzf
@@ -34,4 +41,6 @@ brew install fd
 brew install ripgrep
 brew install lazygit
 brew install eza
+brew install tmux
+brew install --cask alt-tab
 ```
