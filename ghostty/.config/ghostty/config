@@ -1,2 +1,3 @@
 font-family = JetBrains Mono
 theme = slav-theme.conf 
+gtk-single-instance = true
