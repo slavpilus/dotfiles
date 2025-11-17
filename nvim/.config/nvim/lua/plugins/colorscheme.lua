@@ -1,11 +1,21 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
+  -- Try catppuccin with better readability
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    opts = {
+      flavour = "latte", -- or "frappe", "macchiato", "mocha"
+      dim_inactive = {
+        enabled = false, -- Don't dim inactive windows
+      },
+    },
+  },
 
-  -- Configure LazyVim to load colorscheme
+  -- Set it as default
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "catppuccin",
     },
   },
 }

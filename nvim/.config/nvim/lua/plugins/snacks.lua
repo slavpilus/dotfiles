@@ -1,17 +1,10 @@
 return {
-  {
-    "folke/snacks.nvim",
-    opts = {
-      picker = {
-        hidden = true,
-        ignored = true,
-        sources = {
-          files = {
-            hidden = true,
-            ignored = true,
-          },
-        },
-      },
+  "folke/snacks.nvim",
+  opts = {
+    explorer = {
+      follow_gitignore = false,
+      hidden = true,
+      filters = false,
     },
   },
 }
